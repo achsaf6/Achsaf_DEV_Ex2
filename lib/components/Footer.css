@@ -1,0 +1,18 @@
+/* global.css or Footer.module.css */
+
+/* Default Footer styles */
+footer {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    background-color: #f8f9fa; /* Example background */
+    color: #333;
+  }
+  
+  /* Hide Footer on small screens */
+  @media (max-width: 768px) {
+    footer {
+      display: none;
+    }
+  }
+  

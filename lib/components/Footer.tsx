@@ -1,5 +1,7 @@
 import { COURSE_CREDITS } from "@/lib/config";
 import { AuthAction } from "./AuthAction";
+import "./Footer.css";
+
 
 export default function Footer() {
   return (

@@ -1,0 +1,20 @@
+
+/* global.css or Navbar.module.css */
+
+/* Default styles for Navbar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #000; /* Example background */
+    color: #fff;
+  }
+  
+  /* Hide Navbar on small screens */
+  @media (max-width: 768px) {
+    #navbar {
+      display: none;
+    }
+  }
+  

@@ -1,0 +1,57 @@
+.hey {
+  font-size: 3rem;
+  color: #ff69b4; /* Hot pink */
+  text-shadow: 2px 2px 5px #ff1493, 0 0 10px #ff4500; /* Neon glow effect */
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  animation: neon-flash 1.5s infinite alternate;
+}
+
+@keyframes neon-flash {
+  0% {
+    text-shadow: 2px 2px 5px #ff69b4, 0 0 10px #ff1493, 0 0 20px #ff4500;
+  }
+  100% {
+    text-shadow: 2px 2px 5px #ff4500, 0 0 10px #ff69b4, 0 0 20px #ff1493;
+  }
+}
+
+.boardRow {
+  display: flex;
+  justify-content: center;
+  gap: 1em; /* Space between squares */
+}
+
+.square {
+  width: 3em; /* Slightly larger squares */
+  height: 3em;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #6a0dad; /* Purple border */
+  background: linear-gradient(45deg, #ff69b4, #ff4500); /* Vibrant gradient background */
+  color: #fff;
+  box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff4500; /* Glowing effect */
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.square:hover {
+  transform: scale(1.1); /* Enlarge slightly on hover */
+  box-shadow: 0 0 20px #ff4500, 0 0 30px #ff69b4;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Center vertically */
+  background: radial-gradient(circle, #1e1e1e, #000); /* Dark gradient background */
+  color: #ff69b4;
+  font-family: 'Courier New', monospace;
+  padding: 1em;
+  border: 5px dashed #ff1493;
+  box-shadow: 0 0 50px #ff1493, inset 0 0 20px #6a0dad;
+}
